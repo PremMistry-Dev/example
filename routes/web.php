@@ -5,7 +5,8 @@ use App\Models\Job;
 
 
 Route::get('/', function () {
-    return view('Home');
+   $jobs = Job::all();
+ //  dd($jobs[0]->title);
 });
 
 Route::get('/jobs', function () {
